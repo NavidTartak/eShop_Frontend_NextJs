@@ -1,0 +1,30 @@
+.button {
+  background: white;
+  color: #363636;
+  font-size: 0.85em;
+  border-radius: 0.3em;
+  border: 1px solid #e0e0e6;
+  transition: 0.2s ease-in-out;
+  user-select: none;
+  cursor: pointer;
+  padding: 0 0.5em;
+}
+.button:hover {
+  border: 1px solid #363636;
+}
+.loadingButton {
+  background: #f3f3f3;
+  color: #6c6c6c;
+  border-radius: 0.3em;
+  user-select: none;
+  border: 0px solid transparent !important;
+}
+.respButton {
+  cursor: pointer;
+  color: #363636;
+  font-size: 0.85em;
+  transition: 0.2s ease-in-out;
+}
+.respButton:hover {
+  color: #6c6c6c;
+}

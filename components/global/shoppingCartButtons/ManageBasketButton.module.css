@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  height: 35px;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 0.9em;
+}
+.label {
+  display: block;
+  text-align: center;
+  width: 35%;
+  font-size: 1.4em;
+}
+.icon {
+  color: #c82d2d;
+}

@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  user-select: none;
+  row-gap: 3vh;
+  column-gap: 1vw;
+  flex-wrap: wrap;
+}

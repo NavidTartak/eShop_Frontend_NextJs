@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c82d2d;
+  color: white;
+  min-height: 1.9em;
+  min-width: 1.9em;
+  font-size: 0.6em;
+  text-align: center;
+  border-radius: 0.8em;
+  margin-top: -2em;
+}
+.circleBadge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c82d2d;
+  color: white;
+  min-height: 0.9em;
+  min-width: 0.9em;
+  font-size: 0.6em;
+  text-align: center;
+  border-radius: 0.8em;
+  margin-top: -2em;
+}

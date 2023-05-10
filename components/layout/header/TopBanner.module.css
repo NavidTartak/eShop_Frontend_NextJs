@@ -1,0 +1,14 @@
+.image {
+  object-position: center;
+  object-fit: cover;
+}
+.skeleton {
+  object-fit: cover;
+  height: 100% !important;
+}
+.positionRelative {
+  position: relative;
+}
+.bgWhite {
+  background: white;
+}

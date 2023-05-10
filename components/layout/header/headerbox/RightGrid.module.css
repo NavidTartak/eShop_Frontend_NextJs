@@ -1,0 +1,11 @@
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  transition: 0.2s ease-in-out;
+}
+.image:hover {
+  filter: drop-shadow(1px 3px 3px rgba(0, 0, 0, 0.3));
+}

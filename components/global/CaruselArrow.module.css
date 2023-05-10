@@ -1,0 +1,10 @@
+.arrow {
+  color: #252525 !important;
+  z-index: 1000;
+}
+.prevArrow {
+  margin-left: 32px !important;
+}
+.nextArrow {
+  margin-right: 32px !important;
+}

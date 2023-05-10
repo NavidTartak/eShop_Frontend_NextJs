@@ -1,0 +1,17 @@
+.button {
+  background: #c82d2d;
+  color: white;
+  border-radius: 0.3em;
+  transition: 0.2s ease-in-out;
+  user-select: none;
+  cursor: pointer;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.3);
+  border: 0px solid transparent !important;
+}
+.loadingButton {
+  background: #f3f3f3;
+  color: #6c6c6c;
+  border-radius: 0.3em;
+  user-select: none;
+  border: 0px solid transparent !important;
+}
