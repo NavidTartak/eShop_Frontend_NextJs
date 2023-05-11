@@ -1,0 +1,9 @@
+.outerContainer {
+  padding: 2vh 1.5vw;
+}
+.fieldContainer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  column-gap: 1vw;
+}

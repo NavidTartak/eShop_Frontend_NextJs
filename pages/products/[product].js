@@ -1,7 +1,9 @@
 import React from "react";
 import * as Repo from "@/repository/AxiosRepository";
 import GlobalHead from "@/components/global/GlobalHead";
-import { Box, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
+import SingleProductCart from "@/components/pages/product/SingleProductCart";
+import SingleProductDetails from "@/components/pages/product/SingleProductDetails";
 const Product = ({ product }) => {
   return (
     <>
@@ -22,7 +24,7 @@ const Product = ({ product }) => {
         </Grid>
         <Grid
           container
-          justifyContent="center"
+          justifyContent="space-evenly"
           alignItems="flex-start"
           item
           xs={12}
@@ -31,31 +33,14 @@ const Product = ({ product }) => {
           <Grid
             item
             xs={11}
-            md={4}
-            lg={4.5}
+            md={3.9}
+            lg={4.4}
             style={{ border: "1px solid red" }}
           >
             right
           </Grid>
-          <Grid
-            item
-            xs={11}
-            md={4}
-            lg={4.5}
-            style={{ border: "1px solid red" }}
-          >
-            center
-          </Grid>
-          <Grid
-            item
-            xs={11}
-            md={4}
-            lg={3}
-            display={{ xs: "none", md: "block" }}
-            style={{ border: "1px solid red" }}
-          >
-            left
-          </Grid>
+          <SingleProductDetails product={product} />
+          <SingleProductCart product={product} />
         </Grid>
       </Grid>
     </>
