@@ -1,5 +1,5 @@
 import storage from "redux-persist/lib/storage";
-import { persistReducer } from "redux-persist";
+import { persistReducer, persistStore } from "redux-persist";
 import { configureStore } from "@reduxjs/toolkit";
 import rootReducer from "./features/RootReducer";
 const persistConfig = {
@@ -16,3 +16,4 @@ export const Store = configureStore({
       serializableCheck: false,
     }),
 });
+export const persistor = persistStore(Store);
