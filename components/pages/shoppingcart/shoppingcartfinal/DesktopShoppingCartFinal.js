@@ -9,7 +9,7 @@ const DesktopShoppingCartFinal = ({ basket }) => {
   const [loading, setLoading] = useState(false);
   const goToShoppingHandler = async () => {
     setLoading(true);
-    await router.push("/shopping");
+    await router.push("/shipping");
     setLoading(false);
   };
   return (

@@ -6,6 +6,7 @@ import {
   Skeleton,
 } from "@mui/material";
 import React from "react";
+import styles from "./Input.module.css";
 const Input = ({
   fontSize,
   error,
@@ -47,26 +48,39 @@ const Input = ({
           <Skeleton variant="rounded" height={40} />
         ) : (
           <>
-            <InputLabel
-              sx={!fontSize ? "" : { fontSize: fontSize }}
-              className={"IranSans text-dark"}
-            >
-              {label}
-            </InputLabel>
-            <OutlinedInput
-              label={`${label}`}
-              sx={!fontSize ? "" : { fontSize: fontSize }}
-              className={"IranSans"}
-              fullWidth
-              type="text"
-              {...otherProps}
-            />
+            {!label ? (
+              <OutlinedInput
+                sx={!fontSize ? "" : { fontSize: fontSize }}
+                className={"IranSans"}
+                fullWidth
+                type="text"
+                {...otherProps}
+              />
+            ) : (
+              <>
+                <InputLabel
+                  sx={!fontSize ? "" : { fontSize: fontSize }}
+                  className={"IranSans text-dark"}
+                >
+                  {label}
+                </InputLabel>
+                <OutlinedInput
+                  label={`${label}`}
+                  sx={!fontSize ? "" : { fontSize: fontSize }}
+                  className={"IranSans"}
+                  fullWidth
+                  type="text"
+                  {...otherProps}
+                />
+              </>
+            )}
           </>
         )}
+
+        <FormHelperText className={`${styles.helperText} IranSans text-danger`}>
+          {isSkeleton ? <Skeleton /> : helperText}
+        </FormHelperText>
       </FormControl>
-      <FormHelperText className="IranSans text-danger">
-        {isSkeleton ? <Skeleton /> : helperText}
-      </FormHelperText>
     </>
   );
 };

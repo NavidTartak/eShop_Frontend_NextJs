@@ -53,7 +53,7 @@ const ShoppingCartProducts = () => {
             sm: "2vh 3vw",
             md: "2vh 1.5vw",
           }}
-          marginBottom={{ xs: "14vh", lg: "auto" }}
+          marginBottom={{ xs: "16vh", sm: "14vh", lg: "auto" }}
         >
           <div
             className={`${styles.fieldContainer} text-darker line-height-1-7`}

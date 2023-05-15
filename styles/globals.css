@@ -223,3 +223,6 @@ a:active {
   border: none !important;
   outline: none !important;
 }
+.margin-auto-auto {
+  margin: auto auto !important;
+}

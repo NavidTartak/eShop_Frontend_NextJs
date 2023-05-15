@@ -11,3 +11,46 @@
   border: 1px solid #dfdfdf;
   border-radius: 1em 1em 0 0;
 }
+.outerFixedContainer {
+  padding: 2vh 1.5vw;
+}
+.flexContainer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  column-gap: 1vw;
+}
+.fieldContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  min-height: 32px;
+  background: #c82d2d;
+  color: white;
+  border-radius: 0.3em;
+  transition: 0.2s ease-in-out;
+  user-select: none;
+  cursor: pointer;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.3);
+  border: 0px solid transparent !important;
+}
+.button:hover {
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.disabledButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 32px;
+  background: #e0e0e6;
+  border-radius: 0.3em;
+  user-select: none;
+  cursor: pointer;
+  border: 0px solid transparent !important;
+}
