@@ -9,18 +9,14 @@
   align-items: center;
   column-gap: 1.2vw;
 }
+
 .icon {
   color: #19bfd3;
 }
-.showMore {
-  display: inline-flex;
-  justify-content: right;
+.emptyImage {
+  display: flex;
+  width: 15em;
+  height: 15em;
+  justify-content: center;
   align-items: center;
-  column-gap: 0.5em;
-  color: #19bfd3;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-.showMore:hover {
-  color: #6c6c6c;
 }

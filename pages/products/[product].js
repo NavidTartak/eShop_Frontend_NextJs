@@ -4,6 +4,7 @@ import GlobalHead from "@/components/global/GlobalHead";
 import { Grid } from "@mui/material";
 import SingleProductCart from "@/components/pages/product/SingleProductCart";
 import SingleProductDetails from "@/components/pages/product/SingleProductDetails";
+import SingleProductImageGallery from "@/components/pages/product/SingleProductImageGallery";
 const Product = ({ product }) => {
   return (
     <>
@@ -15,13 +16,6 @@ const Product = ({ product }) => {
         padding="3vh 0"
         rowGap="3vh"
       >
-        <Grid item xs={11} dir="rtl">
-          {product.dailySuggest ? (
-            <h3 className="text-danger user-select-none">پیشنهاد روزانه</h3>
-          ) : (
-            <h3 className="user-select-none">&nbsp;</h3>
-          )}
-        </Grid>
         <Grid
           container
           justifyContent="space-evenly"
@@ -29,16 +23,9 @@ const Product = ({ product }) => {
           item
           xs={12}
           dir="rtl"
+          rowGap={1}
         >
-          <Grid
-            item
-            xs={11}
-            md={3.9}
-            lg={4.4}
-            style={{ border: "1px solid red" }}
-          >
-            right
-          </Grid>
+          <SingleProductImageGallery product={product} />
           <SingleProductDetails product={product} />
           <SingleProductCart product={product} />
         </Grid>

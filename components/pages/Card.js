@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Box, Skeleton } from "@mui/material";
 import Link from "next/link";
 import ShoppingCartButton from "../global/ShoppingCartButton";
+import { BsCardImage } from "react-icons/bs";
 const Card = ({
   item,
   showIncredibleOffer,
@@ -78,12 +79,25 @@ const Card = ({
           {item.name.substring(0, 30)}
           {item.name.length > 30 ? "..." : null}
         </div>
-        <Image
-          alt={item.name}
-          src={item.indexImageUrl}
-          width={170}
-          height={170}
-        />
+        {item.indexImageUrl ? (
+          <Image
+            alt={item.name}
+            src={item.indexImageUrl}
+            width={170}
+            height={170}
+          />
+        ) : (
+          <Box
+            width={170}
+            height={170}
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <BsCardImage size={45} className="text-seperator" />
+          </Box>
+        )}
+
         {item.priceWithDiscount === 0 ? (
           <>
             <div className={styles.priceContainer} dir="rtl">

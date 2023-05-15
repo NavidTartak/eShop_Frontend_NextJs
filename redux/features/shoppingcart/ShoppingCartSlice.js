@@ -3,17 +3,22 @@ const INITIAL_STATE = {
   items: [],
   totalCount: 0,
   totalAmount: 0,
+  totalBenefitAmount: 0,
 };
 const upToDateCart = (state) => {
+  let withoutDiscountAmount = 0;
   state.totalCount = 0;
   state.totalAmount = 0;
+  state.totalBenefitAmount = 0;
   state.items.map((item) => {
     state.totalCount += item.count;
     state.totalAmount +=
       item.priceWithDiscount > 0
         ? item.count * item.priceWithDiscount
         : item.count * item.price;
+    withoutDiscountAmount += item.count * item.price;
   });
+  state.totalBenefitAmount = withoutDiscountAmount - state.totalAmount;
   return state;
 };
 export const ShoppingCartSlice = createSlice({

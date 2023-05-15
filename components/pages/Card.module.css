@@ -9,6 +9,7 @@
   transition: 0.2s ease-in-out;
   row-gap: 1vh;
 }
+
 .borderRadius {
   border-radius: 0.6em;
 }

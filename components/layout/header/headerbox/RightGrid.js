@@ -17,11 +17,7 @@ const RightGrid = () => {
       md={8}
     >
       <Grid item xs={12}>
-        <Stack
-          display={{ xs: "none", md: "flex" }}
-          direction="row"
-          alignItems="center"
-        >
+        <Stack display="flex" direction="row" alignItems="center">
           <Link href="/" className={styles.link}>
             <Image
               src="/images/footerlogo2.png"
@@ -31,13 +27,6 @@ const RightGrid = () => {
               className={styles.image}
             />
           </Link>
-          <SearchBox />
-        </Stack>
-        <Stack
-          display={{ xs: "flex", md: "none" }}
-          direction="row"
-          alignItems="center"
-        >
           <SearchBox />
         </Stack>
       </Grid>

@@ -2,7 +2,7 @@ import { Skeleton } from "@mui/material";
 import { useRouter } from "next/router";
 import React from "react";
 import ReactImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/css/image-gallery.css";
+import "react-image-gallery/styles/scss/image-gallery.scss";
 const Slider = ({ items }) => {
   const router = useRouter();
   const slideClickHandler = (e) => {

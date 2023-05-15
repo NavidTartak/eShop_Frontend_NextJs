@@ -1,6 +1,23 @@
+:root {
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #19bfd3;
+}
+
+::selection {
+  color: white;
+  background: #19bfd3;
+}
 @font-face {
   font-family: IranSans;
   src: url("/public/fonts/IRANSansWeb.woff");
+}
+.line-height-1-7 {
+  line-height: 1.7em;
 }
 .IranSans {
   font-family: IranSans !important;
@@ -40,6 +57,12 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  background: linear-gradient(
+      to top,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
 main {
   display: block;
@@ -194,4 +217,9 @@ template {
 }
 .user-select-none {
   user-select: none !important;
+}
+a:focus,
+a:active {
+  border: none !important;
+  outline: none !important;
 }

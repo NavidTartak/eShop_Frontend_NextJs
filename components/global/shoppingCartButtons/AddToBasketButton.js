@@ -1,14 +1,8 @@
 import React from "react";
 import styles from "./AddToBasketButton.module.css";
-import { useDispatch } from "react-redux";
-import { addItemToCart } from "@/redux/features/shoppingcart/ShoppingCartSlice";
-const AddToBasketButton = ({ item }) => {
-  const dispatch = useDispatch();
-  const addItemClickHandler = () => {
-    dispatch(addItemToCart(item));
-  };
+const AddToBasketButton = ({ addItem }) => {
   return (
-    <div className={styles.button} onClick={addItemClickHandler}>
+    <div className={styles.button} onClick={addItem}>
       افزودن به سبد
     </div>
   );

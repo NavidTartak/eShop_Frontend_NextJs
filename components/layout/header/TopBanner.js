@@ -37,7 +37,7 @@ const TopBanner = () => {
               />
             </Box>
           ) : (
-            <Link href={data.url} draggable={false}>
+            <Link href={decodeURI(data.url)} draggable={false}>
               <Box
                 className={`${styles.positionRelative}`}
                 height={{ xs: "5vh", sm: "6vh", md: "7vh" }}

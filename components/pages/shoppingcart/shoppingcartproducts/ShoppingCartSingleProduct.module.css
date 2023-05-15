@@ -1,0 +1,51 @@
+.container {
+  border: 1px solid #dfdfdf;
+  border-radius: 0.6em;
+  background: white;
+  user-select: none !important;
+}
+.fieldContainer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  column-gap: 1.2vw;
+}
+.priceContainer {
+  margin: 0.4em auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.price {
+  color: #6c6c6c;
+  font-size: 0.8em;
+  text-decoration: line-through;
+  padding: 0.1em 0;
+}
+.badge {
+  background-color: #c82d2d;
+  color: white;
+  padding: 0.1em 0.4em;
+  border-radius: 0.5em;
+  font-size: 0.8em;
+}
+.priceWithDiscount {
+  color: #363636;
+  width: 100%;
+  font-size: 0.95em;
+}
+.priceEmpty {
+  font-size: 0.8em;
+  padding: 0.1em 0;
+}
+.badgeEmpty {
+  color: white;
+  padding: 0.1em 0;
+  border-radius: 0.5em;
+  font-size: 0.8em;
+}
+.icon {
+  color: #19bfd3;
+}

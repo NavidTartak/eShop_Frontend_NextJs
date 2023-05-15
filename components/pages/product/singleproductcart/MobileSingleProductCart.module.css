@@ -1,0 +1,52 @@
+.fixedBoxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 200;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  border: 1px solid #dfdfdf;
+  border-radius: 1em 1em 0 0;
+}
+.outerFixedContainer {
+  padding: 2vh 1.5vw;
+}
+.stockContainer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  column-gap: 1vw;
+}
+.icon {
+  color: #19bfd3;
+}
+.priceContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1em;
+}
+.price {
+  font-size: 0.8em;
+  color: #6c6c6c;
+  text-decoration: line-through;
+}
+.emptyPrice {
+  font-size: 0.8em;
+}
+.badge {
+  background-color: #c82d2d;
+  color: white;
+  padding: 0.1em 0.4em;
+  border-radius: 0.5em;
+  font-size: 0.8em;
+}
+.emptyBadge {
+  color: white;
+  padding: 0.1em 0.4em;
+  border-radius: 0.5em;
+  font-size: 0.8em;
+}
